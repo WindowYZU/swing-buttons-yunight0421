@@ -29,10 +29,14 @@ public class ButtonSample {
         frame.setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
         frame.setLayout(new FlowLayout());
         
-        JButton button=new JButton("Find");
-        ImageIcon icon=new ImageIcon(new URL("https://openclipart.org/image/2400px/svg_to_png/211861/matt-icons_system-search.png"));
+        //1. 建立 button，text 設定為 Find
+        //2. 建立 icon
+        //3. 設定 icon
+        JButton button=null;
+        ImageIcon icon=null;
         ImageIcon icon2=new ImageIcon(icon.getImage().getScaledInstance(25, 25, Image.SCALE_SMOOTH));
-        button.setIcon(icon2);
+        button.setIcon();
+        ////////////////////////////////////
         frame.add(button);
         frame.getRootPane().setDefaultButton(button);
         
